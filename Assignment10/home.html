@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            font:20px;
+        }
+        .Main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-sizing: border-box;
+            height: 100vh;
+            background: linear-gradient(90deg,dodgerblue,teal,springgreen);
+           
+        }
+        .Main .loginBox
+        {
+            
+            height: 20rem;
+            width : 18rem;
+            background: white;
+            border-radius: 2rem;
+            border: none;
+        }
+        .Main .loginBox > *
+        {
+            text-align: center;
+        }
+        .loginBox >legend
+        {
+           text-align: center;
+        }
+        .loginBox > legend > img
+        {  
+            border-radius: 5.25rem;
+        }
+        .loginBox > h2
+        {  
+            font-size: 1.75rem;
+            font-family: 'Times New Roman';
+            color: steelblue;
+        }
+        
+        .loginBox #username,.loginBox #pwd
+        {
+            outline: none;
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            font-size: 1.125rem;
+            margin: 1.25rem 0rem;
+
+        }
+        .loginBox #btn
+        {
+            width: 12rem;
+            height: 2rem;
+            font-size:1.25rem;
+            border-radius:0.125rem;
+            outline:none;
+            background-color:purple;
+            border: none;
+            color: antiquewhite;
+            margin: 1.125rem 0rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <form action="loginaction.php" method="post">
+            <fieldset class="loginBox">
+                <legend>
+                    <img src="login10.png" alt="profile" width="75" height="75">
+                </legend>
+                <h2>HR Login</h2>
+                <div>
+                    <input type="text" name="username" placeholder="Username" id="username">
+                </div>
+
+                <div>
+                    <input type="password" name="passwd" placeholder="Password" id="pwd">
+                </div>
+                <div>
+                    <input type="submit" name="Submit" value="Login" id="btn">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
